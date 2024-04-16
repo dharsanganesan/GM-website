@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+body{
+  background-color:#222831;
+  color: #21E6C1;
+	font-family: 'Mulish', sans-serif;
+  margin-top: 25px;
+	align-items:center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container1{
+  background-color:#393E46;
+  padding: 1.5em 4em;
+  border-radius: 5px;
+  width: 92%;
+  height:96%;
+}
+.come{
+
+  width: 60%;
+    height: 35px;
+    border: none;
+    border-color: #21E6C1;
+    color: #21E6C1;
+    border-bottom: 2px solid #21E6C1;
+    background-color: #393e46;
+    margin-top: 23px;
+}
+.container1 h1{
+  text-align:center;
+  margin-bottom: 2em;
+  
+}
+
+.container1 a{
+  text-decoration: none;
+  color:#00ADB5;
+}
+
+.control{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.control input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px #21E6C1 solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.control input:focus, .control input:valid{
+  outline: 0;
+}
+
+.control label{
+  position:absolute;
+  top: 15px;
+  left: 0;
+  
+}
+
+.control label span{
+  display: inline-block;
+  font-size:18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);/* bouncing movement*/
+  
+}
+input{color:#21E6C1}
+.control input:focus + label span, 
+.control input:valid + label span {
+  color: #66fff9;
+  transform:translateY(-30px);
+  }
+  .input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+.input[type=date]:focus::-webkit-datetime-edit {
+    color: #393e46 !important;
+}
+.date{
+border:none;
+background-color: #393e46;
+color: #21E6C1;
+border-bottom:2px solid #21E6C1;
+font-family:Serif;}
+.submit{
+  width:70px;
+  height: 30px;
+  background-color:#393e46;
+  color: #21E6C1;
+  border: none;
+  margin-left: 62vh;
+    margin-top: 6vh;
+    border-bottom: 1px solid #21E6C1 ;
+}
+.submit:hover{
+  border-bottom: 1px solid antiquewhite;
+color: antiquewhite;}
+.header-fixed {
+	margin-left: 46vh;
+    padding: 20px 40px;
+    height: 80px;
+    box-sizing: border-box;
+    top: -100px;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #21E6C1;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.fixed .header-fixed-placeholder {
+	display: block;
+}
+.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .hide{
+    visibility:hidden;
+  }
+  .header-fixed {
+    margin-left: 0vh;
+  }
+  .container1{
+    width: 73vh;
+    height: auto;
+  }
+  .o-0{
+    width: 32vh;
+    height: 18vh;
+  }
+  .submit{
+    margin-left:11vh;
+  }
+.come{
+  width: 67%;
+}
+}
+@media screen and (min-device-width: 700px) 
+    and (max-device-width: 1024px) {
+
+      .hide{
+        visibility:hidden;
+      }
+      .o-0{
+        width: 39vh;
+        height: 15vh;
+      }
+      .header-fixed {
+        margin-left: 0vh;
+      }
+      .container1{
+        width: 73vh;
+        height: auto;
+      }
+      .submit{
+        margin-left:28vh;
+      }
+      .come{
+        width: 67%;
+      }
+    }
+    .nova-modal {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999999999999;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nova-modal .nova-alert {
+      position: relative;
+      width: 70%;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 0px;
+      border-radius: 3px;
+      text-align: center;
+      animation: 0.6s 1 novaAnimate;
+      -webkit-animation: 0.6s 1 novaAnimate;
+    }
+    
+    @media (min-width: 768px) {
+      .nova-modal .nova-alert {
+        width: 350px;
+      }
+    }
+    
+    @keyframes novaAnimate {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      to {
+        transform: none;
+      }
+    }
+    
+    .nova-modal .nova-alert div.nova-icon {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nova-modal .nova-alert div.nova-icon div {
+      transform: scale(1.2);
+    }
+    
+    .nova-modal .nova-alert .nova-title {
+      color: black;
+      font-size: large;
+    }
+    
+    .nova-modal .nova-alert .nova-text {
+      color: #888888;
+      font-size: 15px;
+      margin: 10px 0px;
+    }
+    
+    .nova-modal .nova-alert .nova-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .nova-modal .nova-alert .nova-btns a {
+      text-decoration: none;
+      padding: 7px 10px;
+      flex: 100%;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    
+    .nova-modal .nova-alert .nova-btns a.accept {
+      background: #0099ff;
+      color: #ffffff;
+    }
+    
+    .nova-modal .nova-alert .nova-btns a.reject {
+      background: #ff0000;
+      color: #ffffff;
+    }
+    
+    .nova-modal .nova-alert .dismissButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      font-size: large;
+      border: 1px solid rgba(126, 126, 126, 0.5);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      color: rgba(126, 126, 126, 0.5) !important;
+    }
+    
+    .nova-modal .nova-alert .dismissButton.hidden {
+      display: none;
+    }
+    
+    .nova-modal .nova-alert input.nova-input-alert {
+      width: 100%;
+      padding: 5px 5px;
+      margin: 10px 0px;
+      border-radius: 3px;
+      border: 1px solid rgba(126, 126, 126, 0.5);
+      background-color: transparent;
+    }
+    
+    .nova-dark-mode {
+      background-color: #2b2b2b !important;
+    }
+    
+    .nova-dark-mode * {
+      color: white !important;
+    }
+    
+    /*    animation svg icon    */
+    .svg-box {
+      display: inline-block;
+      position: relative;
+      width: 150px;
+    }
+    
+    .green-stroke {
+      stroke: #7CB342;
+    }
+    
+    .red-stroke {
+      stroke: #FF6245;
+    }
+    
+    .yellow-stroke {
+      stroke: #FFC107;
+    }
+    
+    .circular circle.path {
+      stroke-dasharray: 330;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      opacity: 0.4;
+      animation: 0.7s draw-circle ease-out;
+    }
+    
+    /*------- Checkmark ---------*/
+    .checkmark {
+      stroke-width: 6.25;
+      stroke-linecap: round;
+      position: absolute;
+      top: 56px;
+      left: 49px;
+      width: 52px;
+      height: 40px;
+    }
+    
+    .checkmark path {
+      animation: 1s draw-check ease-out;
+    }
+    
+    @keyframes draw-circle {
+      0% {
+        stroke-dasharray: 0,330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+      80% {
+        stroke-dasharray: 330,330;
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.4;
+      }
+    }
+    
+    @keyframes draw-check {
+      0% {
+        stroke-dasharray: 49,80;
+        stroke-dashoffset: 48;
+        opacity: 0;
+      }
+      50% {
+        stroke-dasharray: 49,80;
+        stroke-dashoffset: 48;
+        opacity: 1;
+      }
+      100% {
+        stroke-dasharray: 130,80;
+        stroke-dashoffset: 48;
+      }
+    }
+    
+    /*---------- Cross ----------*/
+    .cross {
+      stroke-width: 6.25;
+      stroke-linecap: round;
+      position: absolute;
+      top: 54px;
+      left: 54px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .cross .first-line {
+      animation: 0.7s draw-first-line ease-out;
+    }
+    
+    .cross .second-line {
+      animation: 0.7s draw-second-line ease-out;
+    }
+    
+    @keyframes draw-first-line {
+      0% {
+        stroke-dasharray: 0,56;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 0,56;
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dasharray: 56,330;
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    @keyframes draw-second-line {
+      0% {
+        stroke-dasharray: 0,55;
+        stroke-dashoffset: 1;
+      }
+      50% {
+        stroke-dasharray: 0,55;
+        stroke-dashoffset: 1;
+      }
+      100% {
+        stroke-dasharray: 55,0;
+        stroke-dashoffset: 70;
+      }
+    }
+    
+    .alert-sign {
+      stroke-width: 6.25;
+      stroke-linecap: round;
+      position: absolute;
+      top: 40px;
+      left: 68px;
+      width: 15px;
+      height: 70px;
+      animation: 0.5s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .alert-sign .dot {
+      stroke: none;
+      fill: #FFC107;
+    }
+    
+    @keyframes alert-sign-bounce {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
